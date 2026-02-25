@@ -1,19 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt-BR" style="scroll-behavior: smooth;">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeFixer | Soluções Profissionais em Informática</title>
-    <meta name="description" content="Soluções profissionais em manutenção de computadores. Formatação, remoção de vírus, upgrade SSD e suporte técnico especializado.">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
+        /* Variáveis com nomes em inglês para o navegador entender */
         :root {
             --primary: #00ff88;
-            --primary-hover: #00cc6d;
             --dark: #0f172a;
             --card: #1e293b;
             --light: #94a3b8;
-            --white: #ffffff;
         }
 
         * {
@@ -25,7 +23,7 @@
         body {
             font-family: 'Poppins', sans-serif;
             background: var(--dark);
-            color: var(--white);
+            color: #fff;
             line-height: 1.6;
         }
 
@@ -42,42 +40,19 @@
             z-index: 1000;
         }
 
-        header h1 {
-            color: var(--primary);
-            font-size: 22px;
-        }
+        header h1 { color: var(--primary); font-size: 22px; }
 
         nav a {
-            color: var(--white);
+            color: #fff;
             text-decoration: none;
             margin-left: 25px;
             font-weight: 500;
-            transition: .3s;
-        }
-
-        nav a:hover {
-            color: var(--primary);
-        }
-
-        section {
-            padding: 100px 8%;
-            text-align: center;
         }
 
         .hero {
-            padding-top: 160px;
+            padding: 160px 8% 80px;
+            text-align: center;
             background: linear-gradient(135deg, #0f172a, #111827);
-        }
-
-        .hero h2 {
-            font-size: 44px;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            max-width: 650px;
-            margin: 0 auto 30px;
-            color: var(--light);
         }
 
         .btn {
@@ -85,99 +60,56 @@
             color: #000;
             padding: 16px 40px;
             border-radius: 50px;
-            font-weight: 600;
             text-decoration: none;
+            font-weight: 600;
             display: inline-block;
-            transition: .3s;
-            box-shadow: 0 10px 25px rgba(0, 255, 136, 0.3);
         }
 
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 35px rgba(0, 255, 136, 0.5);
-        }
-
+        /* Grid de serviços */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px;
-            margin-top: 50px;
+            padding: 40px 8%;
         }
 
         .card {
             background: var(--card);
             padding: 30px;
             border-radius: 20px;
-            transition: .4s;
-            border: 1px solid rgba(255,255,255,0.05);
-        }
-
-        .card:hover {
-            transform: translateY(-8px);
-            border-color: var(--primary);
-        }
-
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-        }
-
-        .stat h3 {
-            font-size: 38px;
-            color: var(--primary);
-        }
-
-        footer {
-            background: #000;
-            padding: 30px;
             text-align: center;
-            font-size: 14px;
-            color: #aaa;
         }
     </style>
 </head>
 <body>
-
     <header>
         <h1>CodeFixer</h1>
         <nav>
             <a href="#servicos">Serviços</a>
-            <a href="#sobre">Empresa</a>
             <a href="#contato">Contato</a>
         </nav>
     </header>
 
-    <main>
-        <section class="hero">
-            <h2>Soluções Profissionais em Informática</h2>
-            <p>Atendimento especializado, suporte técnico avançado e manutenção completa.</p>
-            <a class="btn" href="https://wa.me/5521999212228" target="_blank">Solicitar Atendimento</a>
-        </section>
+    <section class="hero">
+        <h2>Soluções Profissionais em Informática</h2>
+        <p>Manutenção completa para seu equipamento.</p>
+        <br>
+        <a href="https://wa.me/5521999212228" class="btn">Solicitar Suporte</a>
+    </section>
 
-        <section id="servicos">
-            <h2>Nossos Serviços</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>Formatação</h3>
-                    <p>Instalação de sistemas com backup e otimização.</p>
-                </div>
-                <div class="card">
-                    <h3>Upgrade SSD</h3>
-                    <p>Aumente a velocidade do seu PC ou notebook.</p>
-                </div>
-                <div class="card">
-                    <h3>Limpeza</h3>
-                    <p>Manutenção preventiva e troca de pasta térmica.</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        © 2026 CodeFixer - Diogo Rosa Teixeira Carvalho
-    </footer>
-
+    <div id="servicos" class="grid">
+        <div class="card">
+            <h3>Formatação</h3>
+            <p>Sistema novo e otimizado.</p>
+        </div>
+        <div class="card">
+            <h3>Upgrade SSD</h3>
+            <p>Mais velocidade para seu PC.</p>
+        </div>
+        <div class="card">
+            <h3>Limpeza</h3>
+            <p>Manutenção preventiva física.</p>
+        </div>
+    </div>
 </body>
 </html>
