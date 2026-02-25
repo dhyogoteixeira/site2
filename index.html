@@ -4,162 +4,238 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Técnico em Informática | CodeFixer</title>
+<title>CodeFixer | Soluções Profissionais em Informática</title>
 
-<meta name="description" content="Manutenção de computadores. Formatação, remoção de vírus, upgrade SSD e suporte rápido. Atendimento em até 24h via WhatsApp.">
+<meta name="description" content="Soluções profissionais em manutenção de computadores. Formatação, remoção de vírus, upgrade SSD e suporte técnico especializado. Atendimento rápido e garantia.">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
-body{
+:root{
+--primary:#00ff88;
+--dark:#0f172a;
+--card:#1e293b;
+--light:#94a3b8;
+}
+
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
 font-family:'Poppins',sans-serif;
-background:#0f172a;
+background:var(--dark);
 color:#fff;
+line-height:1.6;
+}
+
+header{
+position:fixed;
+width:100%;
+top:0;
+background:rgba(15,23,42,0.95);
+backdrop-filter:blur(10px);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+z-index:1000;
+}
+
+header h1{
+color:var(--primary);
+font-size:22px;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:var(--primary);
 }
 
 section{
-padding:80px 8%;
+padding:100px 8%;
 text-align:center;
 }
 
 .hero{
-background:linear-gradient(135deg,#0f172a,#1e293b);
-padding:120px 8%;
+padding-top:160px;
+background:linear-gradient(135deg,#0f172a,#111827);
 }
 
-h1{
-font-size:42px;
+.hero h2{
+font-size:44px;
 margin-bottom:20px;
-color:#00ff88;
 }
 
-p{
-max-width:600px;
+.hero p{
+max-width:650px;
 margin:0 auto 30px;
-font-size:18px;
-opacity:0.9;
+color:var(--light);
 }
 
 .btn{
-background:#00ff88;
+background:var(--primary);
 color:#000;
-padding:15px 35px;
+padding:16px 40px;
 border-radius:50px;
 font-weight:600;
 text-decoration:none;
 display:inline-block;
-transition:0.3s;
+transition:.3s;
+box-shadow:0 10px 25px rgba(0,255,136,0.3);
 }
 
 .btn:hover{
-transform:scale(1.08);
+transform:translateY(-3px);
+box-shadow:0 15px 35px rgba(0,255,136,0.5);
 }
 
-.cards{
+.grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-margin-top:40px;
+gap:30px;
+margin-top:50px;
 }
 
 .card{
-background:#1e293b;
-padding:25px;
-border-radius:15px;
+background:var(--card);
+padding:30px;
+border-radius:20px;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 30px rgba(0,0,0,0.4);
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+margin-top:50px;
+}
+
+.stat h3{
+font-size:38px;
+color:var(--primary);
 }
 
 .testimonial{
-background:#111827;
+background:var(--card);
 padding:40px;
-border-radius:15px;
-max-width:700px;
-margin:0 auto;
+border-radius:20px;
+max-width:750px;
+margin:40px auto 0;
 }
 
 .cta{
-background:#00ff88;
+background:var(--primary);
 color:#000;
-padding:60px 8%;
 }
 
 footer{
 background:#000;
-padding:20px;
+padding:30px;
+text-align:center;
 font-size:14px;
+color:#aaa;
 }
 </style>
 </head>
 
 <body>
 
+<header>
+<h1>CodeFixer</h1>
+<nav>
+<a href="#servicos">Serviços</a>
+<a href="#sobre">Empresa</a>
+<a href="#contato">Contato</a>
+</nav>
+</header>
+
 <section class="hero">
-<h1>Seu computador está lento ou com vírus?</h1>
-<p>Manutenção profissional com atendimento rápido e garantia real. Resolvo seu problema em até 24h.</p>
-<a class="btn" href="https://wa.me/5521999212228?text=Olá,%20preciso%20de%20manutenção%20no%20meu%20computador" target="_blank">
-Falar no WhatsApp Agora
+<h2>Soluções Profissionais em Informática</h2>
+<p>Atendimento especializado, suporte técnico avançado e manutenção completa para manter seu equipamento sempre no máximo desempenho.</p>
+<a class="btn" href="https://wa.me/5521999212228?text=Olá,%20preciso%20de%20suporte%20técnico" target="_blank">
+Solicitar Atendimento
 </a>
 </section>
 
-<section>
-<h2>Serviços Especializados</h2>
-<div class="cards">
-<div class="card">
-<h3>Formatação Completa</h3>
-<p>Instalação limpa do sistema com drivers e programas essenciais.</p>
+<section id="sobre">
+<h2>Excelência e Confiança</h2>
+<div class="stats">
+<div class="stat">
+<h3>+500</h3>
+<p>Equipamentos atendidos</p>
 </div>
-
-<div class="card">
-<h3>Remoção de Vírus</h3>
-<p>Eliminação total de vírus e malwares com segurança.</p>
+<div class="stat">
+<h3>98%</h3>
+<p>Satisfação de clientes</p>
 </div>
-
-<div class="card">
-<h3>Upgrade SSD</h3>
-<p>Seu computador até 10x mais rápido.</p>
-</div>
-
-<div class="card">
-<h3>Limpeza e Manutenção</h3>
-<p>Limpeza interna e revisão técnica completa.</p>
+<div class="stat">
+<h3>24h</h3>
+<p>Tempo médio de atendimento</p>
 </div>
 </div>
 </section>
 
-<section>
-<h2>Por que escolher a CodeFixer?</h2>
-<div class="cards">
+<section id="servicos">
+<h2>Nossos Serviços</h2>
+<div class="grid">
+
 <div class="card">
-<h3>Atendimento em até 24h</h3>
+<h3>Formatação Profissional</h3>
+<p>Instalação limpa do sistema operacional com otimização de desempenho.</p>
 </div>
 
 <div class="card">
-<h3>Preço Justo</h3>
+<h3>Remoção Avançada de Vírus</h3>
+<p>Proteção e eliminação completa de ameaças digitais.</p>
 </div>
 
 <div class="card">
-<h3>Garantia no Serviço</h3>
+<h3>Upgrade de Performance</h3>
+<p>Instalação de SSD e melhorias para máximo desempenho.</p>
 </div>
+
+<div class="card">
+<h3>Manutenção Preventiva</h3>
+<p>Limpeza interna, revisão e diagnóstico técnico completo.</p>
+</div>
+
 </div>
 </section>
 
 <section>
-<h2>O que dizem nossos clientes</h2>
+<h2>Depoimentos</h2>
 <div class="testimonial">
-<p>"Meu notebook estava travando muito. Depois da manutenção ficou super rápido. Atendimento excelente!"</p>
-<strong>- Cliente satisfeito</strong>
+<p>"Serviço extremamente profissional. Atendimento rápido e resultado acima do esperado."</p>
+<strong>— Cliente Satisfeito</strong>
 </div>
 </section>
 
-<section class="cta">
-<h2>Precisa resolver hoje?</h2>
-<a class="btn" href="https://wa.me/5521999212228?text=Olá,%20preciso%20de%20manutenção%20no%20meu%20computador" target="_blank">
-Solicitar Orçamento Agora
+<section class="cta" id="contato">
+<h2>Precisa de Suporte Especializado?</h2>
+<p>Entre em contato agora mesmo e receba atendimento imediato.</p>
+<a class="btn" href="https://wa.me/5521999212228?text=Olá,%20preciso%20de%20suporte%20técnico" target="_blank">
+Falar com Especialista
 </a>
 </section>
 
 <footer>
-© 2026 CodeFixer - Diogo Rosa Teixeira Carvalho
+© 2026 CodeFixer - Diogo Rosa Teixeira Carvalho  
+Soluções Profissionais em Informática
 </footer>
 
 </body>
