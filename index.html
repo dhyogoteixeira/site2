@@ -30,6 +30,7 @@ body{
     color:#fff;
 }
 
+/* HEADER */
 header{
     position:fixed;
     width:100%;
@@ -43,8 +44,23 @@ header{
     z-index:1000;
 }
 
+/* LOGO + TEXTO */
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+}
+
+.logo{
+    height:45px;
+    width:auto;
+}
+
 header h1{
     color:var(--primary);
+    font-size:22px;
+    margin:0;
 }
 
 nav a{
@@ -58,7 +74,7 @@ nav a:hover{
     color:var(--primary);
 }
 
-/* HERO (agora apenas UMA versão) */
+/* HERO */
 .hero{
     padding:160px 8% 100px;
     text-align:center;
@@ -146,7 +162,6 @@ nav a:hover{
     background:#111827;
 }
 
-/* BOTÕES SEPARADOS */
 .botoes-contato{
     display:flex;
     flex-direction:column;
@@ -171,7 +186,11 @@ footer{
 <body>
 
 <header>
-<h1>CodeFixer</h1>
+<a href="#" class="logo-area">
+    <img src="logo.png" alt="CodeFixer Logo" class="logo">
+    <h1>CodeFixer</h1>
+</a>
+
 <nav>
 <a href="#servicos">Serviços</a>
 <a href="#contato">Contato</a>
@@ -191,7 +210,7 @@ Solicitar Suporte
 <div class="grid">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=800&q=80" alt="Formatação de Computador">
+<img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=800&q=80">
 <div class="card-content">
 <h3>Formatação</h3>
 <p>Instalação limpa e otimizada do sistema operacional.</p>
@@ -199,7 +218,7 @@ Solicitar Suporte
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1593642634443-44adaa06623a?auto=format&fit=crop&w=800&q=80" alt="Upgrade SSD">
+<img src="https://images.unsplash.com/photo-1593642634443-44adaa06623a?auto=format&fit=crop&w=800&q=80">
 <div class="card-content">
 <h3>Upgrade SSD</h3>
 <p>Mais velocidade e desempenho para seu computador.</p>
@@ -207,7 +226,7 @@ Solicitar Suporte
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1580894908361-967195033215?auto=format&fit=crop&w=800&q=80" alt="Limpeza Interna">
+<img src="https://images.unsplash.com/photo-1580894908361-967195033215?auto=format&fit=crop&w=800&q=80">
 <div class="card-content">
 <h3>Limpeza Interna</h3>
 <p>Manutenção preventiva para aumentar a vida útil do equipamento.</p>
@@ -238,6 +257,8 @@ Solicitar Suporte
 
 </body>
 </html>
+
+
 
 
 
