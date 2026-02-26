@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO -->
+    <title>CodeFixer | Manutenção de Computadores em Cabo Frio</title>
+    <meta name="description" content="Manutenção de computadores em Cabo Frio. Formatação, upgrade SSD, limpeza e suporte técnico profissional.">
+    
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #00ff88;
+            --dark: #0f172a;
+            --card: #1e293b;
+            --light: #94a3b8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--dark);
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            z-index: 1000;
+        }
+
+        header h1 {
+            color: var(--primary);
+            font-size: 22px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        .hero {
+            padding: 160px 8% 80px;
+            text-align: center;
+            background: linear-gradient(135deg, #0f172a, #111827);
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: var(--light);
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: var(--primary);
+            color: #000;
+            padding: 16px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 60px 0 20px;
+            font-size: 28px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 40px 8%;
+        }
+
+        .card {
+            background: var(--card);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        .card p {
+            color: var(--light);
+        }
+
+        #contato {
+            text-align: center;
+            padding: 60px 8%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111827;
+            color: var(--light);
+            font-size: 14px;
+        }
+
+        @media(max-width: 768px) {
+            .hero h2 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>CodeFixer</h1>
+    <nav>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Soluções Profissionais em Informática</h2>
+    <p>Manutenção completa para seu computador em Cabo Frio.</p>
+    <a href="https://wa.me/5521999212228" class="btn" target="_blank">
+        Solicitar Suporte
+    </a>
+</section>
+
+<h2 id="servicos" class="section-title">Nossos Serviços</h2>
+
+<div class="grid">
+    <div class="card">
+        <h3>Formatação</h3>
+        <p>Instalação limpa e otimizada do sistema operacional.</p>
+    </div>
+    <div class="card">
+        <h3>Upgrade SSD</h3>
+        <p>Mais velocidade e desempenho para seu computador.</p>
+    </div>
+    <div class="card">
+        <h3>Limpeza Interna</h3>
+        <p>Manutenção preventiva para aumentar a vida útil do equipamento.</p>
+    </div>
+</div>
+
+<section id="contato">
+    <h2 class="section-title">Entre em Contato</h2>
+    <p>Atendimento rápido pelo WhatsApp.</p>
+    <br>
+    <a href="https://wa.me/5521999212228" class="btn" target="_blank">
+        Falar no WhatsApp
+    </a>
+</section>
+
+<footer>
+    © 2026 CodeFixer - Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
