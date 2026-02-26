@@ -30,7 +30,7 @@ body{
     color:#fff;
 }
 
-/* HEADER */
+/* HEADER CORRIGIDO */
 header{
     position:fixed;
     width:100%;
@@ -40,35 +40,38 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:15px 8%;
+    padding:12px 6%;
     z-index:1000;
 }
 
-/* LOGO NOVA */
+/* LOGO CORRIGIDA */
 .logo{
     display:flex;
     align-items:center;
-    gap:10px;
-    font-size:22px;
-    font-weight:700;
+    gap:8px;
     text-decoration:none;
+    white-space:nowrap;
 }
 
 .logo-icon{
-    width:38px;
-    height:38px;
+    min-width:32px;
+    height:32px;
+    padding:6px;
     background:var(--primary);
-    border-radius:8px;
+    border-radius:6px;
     display:flex;
     align-items:center;
     justify-content:center;
     color:#000;
+    font-size:14px;
     font-weight:700;
-    box-shadow:0 0 15px var(--primary);
+    box-shadow:0 0 10px var(--primary);
 }
 
 .logo-text{
     color:#fff;
+    font-size:18px;
+    font-weight:700;
 }
 
 .logo-text span{
@@ -190,8 +193,26 @@ footer{
     font-size:14px;
 }
 
-@media(max-width:768px){
-    .hero h2{font-size:28px;}
+/* RESPONSIVO */
+@media(max-width:600px){
+    nav a{
+        margin-left:15px;
+        font-size:14px;
+    }
+
+    .logo-text{
+        font-size:16px;
+    }
+
+    .logo-icon{
+        height:28px;
+        min-width:28px;
+        font-size:12px;
+    }
+
+    .hero h2{
+        font-size:26px;
+    }
 }
 </style>
 </head>
@@ -269,4 +290,6 @@ Solicitar Suporte
 
 </body>
 </html>
+
+
 
