@@ -1,189 +1,38 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-<meta charset="UTF-8">
-<title>Simulador de Hardware - CodeFixer</title>
 
-<style>
+< div class = " card " > 
+< img src = " https://images.unsplash.com/photo-1580894908361-967195033215?auto=format&fit=crop&w=800&q=80 " > 
+< div class = " card-content " > 
+< h3 > Limpeza Interna </ h3 >
+< p > Manutenção preventiva para aumentar a vida útil do equipamento. </ p >
+</div>​​
+</div>​​
 
-body{
-font-family:Arial;
-background:#0f172a;
-color:white;
-text-align:center;
-}
+</div>​​
 
-.logo{
-font-size:40px;
-color:#22c55e;
-margin-top:20px;
-}
+< section id = " contato " > 
+< h2 class = " section-title " > Entre em Contato </ h2 > 
+< p > Atendimento rápido e profissional. </ p >
 
-.pontuacao{
-position:absolute;
-top:20px;
-right:20px;
-background:#1e293b;
-padding:10px;
-border-radius:8px;
-}
+< div class = " botoes-contato " > 
+    <a href="https://wa.me/5521999212228" class="btn" target="_blank">​​​​​​​​​​​​​​​​​   
+        Falar no WhatsApp
+    </ a >
 
-.computador{
-position:relative;
-width:600px;
-margin:auto;
-margin-top:30px;
-}
+    < a href = " mailto:codefixer@gmail.com?subject=Solicitação de Suporte&body=Olá, preciso de suporte para meu computador. " class = " btn " >  
+        E-mail
+    </ a >
+</div>​​
 
-.computador img{
-width:100%;
-}
+</ seção >
 
-.peca{
-position:absolute;
-cursor:pointer;
-border:2px solid transparent;
-}
+< rodapé >
+© 2026 CodeFixer – Todos os direitos reservados.
+</ rodapé >
 
-.peca:hover{
-border:2px solid #22c55e;
-}
+</body>​​
+</ html >
 
-.ram{
-top:120px;
-left:250px;
-width:120px;
-height:30px;
-}
 
-.cpu{
-top:200px;
-left:200px;
-width:100px;
-height:100px;
-}
-
-.fonte{
-top:50px;
-left:50px;
-width:120px;
-height:120px;
-}
-
-.hd{
-top:350px;
-left:350px;
-width:120px;
-height:80px;
-}
-
-.resultado{
-margin-top:20px;
-font-size:20px;
-}
-
-button{
-padding:12px;
-border:none;
-border-radius:6px;
-background:#22c55e;
-color:white;
-cursor:pointer;
-}
-
-</style>
-</head>
-
-<body>
-
-<div class="logo">🛠 CodeFixer</div>
-
-<h2>Simulador de Diagnóstico de Computadores</h2>
-
-<div class="pontuacao">
-Pontuação: <span id="pontos">0</span>
-</div>
-
-<div class="computador">
-
-<img src="https://i.imgur.com/6Iej2c3.png">
-
-<div class="peca ram" onclick="clicar('ram')"></div>
-<div class="peca cpu" onclick="clicar('cpu')"></div>
-<div class="peca fonte" onclick="clicar('fonte')"></div>
-<div class="peca hd" onclick="clicar('hd')"></div>
-
-</div>
-
-<h3 id="defeito"></h3>
-
-<div class="resultado" id="resultado"></div>
-
-<br>
-
-<button onclick="novoDefeito()">Novo Defeito</button>
-
-<br><br>
-
-<a href="https://wa.me/5521999212228">
-<button>Suporte WhatsApp CodeFixer</button>
-</a>
-
-<script>
-
-let pontos = 0
-
-let defeitos = [
-
-{texto:"Computador não liga", resposta:"fonte"},
-{texto:"Computador liga mas não dá vídeo", resposta:"ram"},
-{texto:"Tela azul frequente", resposta:"ram"},
-{texto:"Computador reiniciando sozinho", resposta:"cpu"},
-{texto:"Computador muito lento", resposta:"hd"}
-
-]
-
-function novoDefeito(){
-
-let aleatorio = Math.floor(Math.random()*defeitos.length)
-
-window.defeitoAtual = defeitos[aleatorio]
-
-document.getElementById("defeito").innerHTML =
-"Defeito: "+defeitoAtual.texto
-
-document.getElementById("resultado").innerHTML=""
-
-}
-
-function clicar(peca){
-
-if(!defeitoAtual) return
-
-if(peca == defeitoAtual.resposta){
-
-pontos+=10
-
-document.getElementById("resultado").innerHTML =
-"✅ Diagnóstico correto!"
-
-}else{
-
-document.getElementById("resultado").innerHTML =
-"❌ Peça incorreta"
-
-}
-
-document.getElementById("pontos").innerHTML=pontos
-
-}
-
-novoDefeito()
-
-</script>
-
-</body>
-</html>
 
 
 
